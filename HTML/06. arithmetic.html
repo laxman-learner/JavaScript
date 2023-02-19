@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic Operator</title>
+  </head>
+  <body>
+    <script>
+      let a = parseInt(prompt("Enter First Value"));
+      let b = parseInt(prompt("Enter Second Value"));
+      document.write("Value of a is " + a + " <br> Value of b is " + b);
+      document.write("<br> Sum is " + (a + b));
+      document.write("<br> Difference is " + (a - b));
+      document.write("<br> Product is " + a * b);
+      document.write("<br> Quotient is " + a / b); // returns Infinity if b=0
+      document.write("<br> Remainder is " + (a % b)); // returns NaN if b =0
+      document.write("<br> Pre-increment of " + a + " is " + ++a);
+      document.write("<br> Post-increment of " + a + " is " + a++);
+      document.write("<br> Pre-decrement of " + a + " is " + --a);
+      document.write("<br> Post-increment of " + a + " is " + a--);
+    </script>
+  </body>
+</html>

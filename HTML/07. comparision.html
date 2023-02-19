@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparision Operator</title>
+  </head>
+  <body>
+    <script>
+      let a = 10,
+        b = "10",
+        c = 10,
+        d = 10.0,
+        e = "10.0",
+        f = "10A",
+        g = 1,
+        h = true,
+        i = 0,
+        j = false;
+      document.write((a == b) + "<br>"); // true
+      document.write((a === b) + "<br>"); // false
+      document.write((a === c) + "<br>"); // true
+      document.write((a == d) + "<br>"); // true
+      document.write((a === d) + "<br>"); // true
+      document.write((a == e) + "<br>"); // true
+      document.write((a === e) + "<br>"); // false
+      document.write((a == f) + "<br>"); // false
+      document.write((a === f) + "<br>"); // false
+      document.write((g == h) + "<br>"); // true
+      document.write((g === h) + "<br>"); // false
+      document.write((i == j) + "<br>"); // true
+      document.write((i === j) + "<br>"); // false
+      document.write((i != j) + "<br>"); // false => valuewise  equal
+      document.write((i !== j) + "<br>"); // true => valuewise equal but not by data type
+      document.write((i != j) + "<br>"); // false => valuewise  equal
+      document.write((i !== j) + "<br>"); //true => valuewise equal but not by data type
+    </script>
+  </body>
+</html>

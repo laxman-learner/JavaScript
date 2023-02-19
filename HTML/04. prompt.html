@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Dialogue Box</title>
+    <script>
+      /* since prompt dialogue box always treats the input as string 
+        and returns string, we can change it to either integer or float using
+        parseInt() or parseFloat() methods. These methods are introduced in 
+        javascript but not in ES6   */
+
+      let age = prompt("Enter your age ", "Your Age");
+
+      // this will return string value but we want age as integer value
+      age = parseInt(age);
+
+      /* float value will be truncated as integer.
+        similarly, interger&string value will be chopped into integer. Means, 30xyz => 30 which
+         is logically incorrect. Therefore, it is not recommended to use parseInt() and 
+         parseFloat().
+        parseInt() requires first digit as integer to work properly. Otherwise, it will return 
+             NoN => Not a Number */
+
+      document.write(
+        "Your current age is " +
+          age +
+          "<br> Your age after 10 years will be " +
+          (age + 10)
+      );
+      /* if we don't convert age to int value, then '+' operator will behave
+       as concatenation operator */
+    </script>
+  </head>
+  <body></body>
+</html>
