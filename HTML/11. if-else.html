@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statements</title>
+  </head>
+  <body>
+    <script>
+      /* JavaScript code to accept an integer from the user and check whether it is 
+      negative number or a single digit positive number or a double digit positive number or 
+      a number with 3 or more digits. Make sure that if the user inputs a non numeric value , 
+      your code displays the message “You did not input a numeric value*/
+
+      // prompt the user to enter a number
+      let userInput = prompt("Please enter a number");
+
+      // check if the input is numeric
+      if (isNaN(userInput)) {
+        document.write("You did not input a number");
+      } else {
+        // check if the input is an integer or a float
+
+        if (Number.isInteger(parseFloat(userInput))) {
+          document.write("The input is an integer");
+        } else {
+          document.write("The input is a float");
+        }
+      }
+    </script>
+  </body>
+</html>
