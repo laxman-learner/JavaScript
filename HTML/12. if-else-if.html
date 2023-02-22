@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if else if in JS</title>
+  </head>
+  <body>
+    <script>
+      let a;
+      let str = "You Entered";
+      a = prompt("Enter a Number");
+      if (isNaN(a)) document.write("You did not input a numberic value");
+      else {
+        a = Number(a);
+        if (a < 0) document.write(str + " a negative number");
+        else if (a <= 9)
+          document.write(str + " a positive single digit number");
+        else if (a <= 99)
+          document.write(str + " a positive double digit number");
+        else
+          document.write(str + " a positive number with three or more digits");
+      }
+    </script>
+  </body>
+</html>
